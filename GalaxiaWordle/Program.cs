@@ -1,15 +1,33 @@
+using Business.DynamicModelReflector.DataOperations;
+using Business.DynamicModelReflector.Interfaces;
+using Business.DynamicModelReflector.ModelReflectors;
+using Business.DynamicModelReflector.QueryBuilders;
+using Business.GalaxiaWordle.Interfaces;
+using Business.GalaxiaWordle.Login.Logins;
+using Business.GalaxiaWordle.PasswordHasers;
+using Business.GalaxiaWordle.Registrations;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Configuration.AddJsonFile("appsettings.json",
+        optional: true,
+        reloadOnChange: true);
+
+#region Injections
+builder.Services.AddScoped<IDataOperations, SqlDataOperations>();
+builder.Services.AddScoped<IQueryBuilder, SqlQueryBuilder>();
+builder.Services.AddScoped<IModelReflector, SqlModelReflector>();
+builder.Services.AddScoped<IPasswordHasher, SaltPasswordHasing>();
+builder.Services.AddScoped<ILogin, BasicLogin>();
+builder.Services.AddScoped<IRegistration, BasicRegistration>();
+#endregion
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

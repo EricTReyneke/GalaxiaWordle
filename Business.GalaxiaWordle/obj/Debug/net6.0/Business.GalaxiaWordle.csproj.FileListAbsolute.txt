@@ -1,0 +1,16 @@
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.csproj.AssemblyReference.cache
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.GeneratedMSBuildEditorConfig.editorconfig
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.AssemblyInfoInputs.cache
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.AssemblyInfo.cs
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.csproj.CoreCompileInputs.cache
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.GalaxiaWordle.deps.json
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.GalaxiaWordle.dll
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.GalaxiaWordle.pdb
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.DynamicModelReflector.dll
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.GalaxiaWordle.Data.dll
+C:\GalaxiaWordle\Business.GalaxiaWordle\bin\Debug\net6.0\Business.GalaxiaWordle.Data.pdb
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.csproj.CopyComplete
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.dll
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\refint\Business.GalaxiaWordle.dll
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\Business.GalaxiaWordle.pdb
+C:\GalaxiaWordle\Business.GalaxiaWordle\obj\Debug\net6.0\ref\Business.GalaxiaWordle.dll

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxiaWordle", "GalaxiaWordle\GalaxiaWordle.csproj", "{C3F40CEC-2D88-43CE-A646-FFB3709F5132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalaxiaWordle", "GalaxiaWordle\GalaxiaWordle.csproj", "{C3F40CEC-2D88-43CE-A646-FFB3709F5132}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.GalaxiaWordle", "Business.GalaxiaWordle\Business.GalaxiaWordle.csproj", "{567F60F1-D769-4D49-8A46-9A87352DCEEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.GalaxiaWordle.Data", "Business.GalaxiaWordle.Data\Business.GalaxiaWordle.Data.csproj", "{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{2782BAC2-3069-40AA-B27D-37C243C317B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{C3F40CEC-2D88-43CE-A646-FFB3709F5132}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F40CEC-2D88-43CE-A646-FFB3709F5132}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F40CEC-2D88-43CE-A646-FFB3709F5132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567F60F1-D769-4D49-8A46-9A87352DCEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567F60F1-D769-4D49-8A46-9A87352DCEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567F60F1-D769-4D49-8A46-9A87352DCEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567F60F1-D769-4D49-8A46-9A87352DCEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{567F60F1-D769-4D49-8A46-9A87352DCEEA} = {2782BAC2-3069-40AA-B27D-37C243C317B9}
+		{D9B047E6-A17B-4E95-99B0-9CBBCC7C4A3C} = {2782BAC2-3069-40AA-B27D-37C243C317B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE2EBB28-577B-41C5-9479-96ED83A77F38}
