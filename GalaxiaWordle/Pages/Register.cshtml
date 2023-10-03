@@ -1,0 +1,119 @@
+﻿@page
+@model GalaxiaWordle.Pages.RegisterModel
+@{
+}
+
+<header>
+    <link rel="stylesheet" href="~/css/RegisterStyle.css">
+    @* <script src="~/js/RegisterScript.js"></script> *@
+</header>
+
+<div class="RegisterPage">
+    <h1 class="WelcomeHeading">Welcome to Wordle Galaxia</h1>
+
+    <div class="RegisterCard">
+        <h3 class="CardHeading">Registration</h3>
+
+        <form method="post" asp-page-handler="CreateNewUser" name="userInformation">
+            <label class="Lables">Full Name</label>
+            <input type="text" class="Inputs" id="fullName" name="FullName" />
+
+            <label class="Lables">User Name</label>
+            <input type="text" class="Inputs" id="UserName" name="UserName" />
+
+            <label class="Lables">Email</label>
+            <input type="email" class="Inputs" id="email" name="Email" />
+
+            <label class="Lables">Password</label>
+            <input type="password" class="Inputs" id="Password" name="Password" />
+
+            <label class="Lables">Confirm Password</label>
+            <input type="password" class="Inputs" id="confirmPassword" />
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p class="Text">Already have an account?<br /> <a href="/Login" class="RegisterHref">Login</a></p>
+
+        @Html.AntiForgeryToken()
+    </div>
+</div>
+
+@* <script>
+    function Validation(fullName, userName, email, password, confirmPassword) {
+
+        // Check if any field is empty
+        if (!fullName || !userName || !email || !password || !confirmPassword) {
+            alert('All fields are required!');
+            return false;
+        }
+
+        // Check if full name contains at least two words (assuming a first name and last name)
+        if (fullName.split(' ').length < 2) {
+            alert('Please enter your full name (first and last name).');
+            return false;
+        }
+
+        // Check if email is valid (simple validation)
+        // var emailPattern = /^[a-zA-Z0-9._-]+[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        // if (!emailPattern.test(email)) {
+        //     alert('Please enter a valid email address.');
+        //     return false;
+        // }
+
+        // Check if password is at least 8 characters long
+        if (password.length < 8) {
+            alert('Password should be at least 8 characters long.');
+            return false;
+        }
+
+        // Check if password and confirmPassword are the same
+        if (password !== confirmPassword) {
+            alert('Passwords do not match.');
+            return false;
+        }
+
+        // If all validations pass
+        return true;
+    }
+
+    function RegisterUser() {
+        var fullName = document.getElementById('fullName').value;
+        var userName = document.getElementById('UserName').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('Password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (!Validation(fullName, userName, email, password, confirmPassword)) {
+            return;
+        }
+
+        var UserInformation = {
+            Id: '0',
+            FullName: fullName,
+            UserName: userName,
+            Email: email,
+            Password: password,
+        };
+
+        var token = $('[name="__RequestVerificationToken"]').val();
+
+        $.ajax({
+            url: '/Registration/CreateNewUser',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(UserInformation),
+            success: function (response) {
+                console.log('Lekker');
+            },
+            headers: {
+                "RequestVerificationToken": token
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error:', errorThrown);
+                console.error('textStatus:', textStatus);
+                console.error('jqXHR:', jqXHR);
+            }
+        });
+    }
+</script> *@

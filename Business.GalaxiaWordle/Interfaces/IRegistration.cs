@@ -1,4 +1,6 @@
-﻿namespace Business.GalaxiaWordle.Interfaces
+﻿using Business.GalaxiaWordle.Data.Models;
+
+namespace Business.GalaxiaWordle.Interfaces
 {
     public interface IRegistration
     {
@@ -8,6 +10,6 @@
         /// <param name="userName">Users User Name.</param>
         /// <param name="password">Users Password.</param>
         /// <returns>If the creation was successful.</returns>
-        bool CreateNewUser(string userName, string password);
+        bool CreateNewUser(UserInformation userInformation);
     }
 }

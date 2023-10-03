@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\LoginStyle.css"
     },
     {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\RegisterStyle.css",
+      "PackagePath": "staticwebassets\\css\\RegisterStyle.css"
+    },
+    {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\LoginScript.js",
       "PackagePath": "staticwebassets\\js\\LoginScript.js"
+    },
+    {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\RegisterScript.js",
+      "PackagePath": "staticwebassets\\js\\RegisterScript.js"
     },
     {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\site.js",

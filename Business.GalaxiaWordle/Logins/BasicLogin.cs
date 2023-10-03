@@ -28,11 +28,13 @@ namespace Business.GalaxiaWordle.Login.Logins
             if (userName == null || password == null) 
                 return false;
 
-            Data.Models.Login userLogin = new();
+            Data.Models.UserInformation userLogin = new();
+
+            string hashedPassword = _passwordHashers.HashPassword(password);
 
             _modelreflector
                 .Load(userLogin)
-                .Where(userLogin => userLogin.UserName == userName && userLogin.Password == _passwordHashers.HashPassword(password))
+                .Where(userLogin => userLogin.UserName == userName && userLogin.Password == hashedPassword)
                 .Execute();
 
             if (string.IsNullOrEmpty(userLogin.UserName) || string.IsNullOrEmpty(userLogin.Password)) 

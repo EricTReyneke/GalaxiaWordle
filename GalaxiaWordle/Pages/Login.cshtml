@@ -14,16 +14,20 @@
     <div class="LoginCard">
         <h3 class="CardHeading">Please log in</h3>
 
-        <lable class="Lables">User Name</lable>
+        <form method="post" asp-page-handler="ValidateUserInfo">
+            <lable class="Lables">User Name</lable>
 
-        <input type="text" class="Inputs" id="userName" />
+            <input type="text" class="Inputs" id="userName" name="userName"/>
 
-        <lable class="Lables">Password</lable>
+            <lable class="Lables">Password</lable>
 
-        <input type="text" class="Inputs" id="password" />
+            <input type="password" class="Inputs" id="password" name="password" />
 
-        <button type="button">Login</button>
+            <button type="submit">Login</button>
+        </form>
 
-        <p class="Text">No account?<br /> <a href="" class="LoginHref">Register</a></p>
+        <p class="Text">No account?<br /> <a href="/Register" class="LoginHref">Register</a></p>
+
+        @Html.AntiForgeryToken()
     </div>
 </div>

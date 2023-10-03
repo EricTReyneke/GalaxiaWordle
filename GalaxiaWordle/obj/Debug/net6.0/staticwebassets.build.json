@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5XvlPc1M3qh4w9gPMk6KExiBMxixUxPDq9YybF2dYzY=",
+  "Hash": "MHkqFUOuN7Fdkc0yJVobJ4/5ibk7jGfPJOQir9Y19Jo=",
   "Source": "GalaxiaWordle",
   "BasePath": "_content/GalaxiaWordle",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\LoginStyle.css"
     },
     {
+      "Identity": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\RegisterStyle.css",
+      "SourceId": "GalaxiaWordle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\",
+      "BasePath": "_content/GalaxiaWordle",
+      "RelativePath": "css/RegisterStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\RegisterStyle.css"
+    },
+    {
       "Identity": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\site.css",
       "SourceId": "GalaxiaWordle",
       "SourceType": "Discovered",
@@ -117,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\LoginScript.js"
+    },
+    {
+      "Identity": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\RegisterScript.js",
+      "SourceId": "GalaxiaWordle",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\",
+      "BasePath": "_content/GalaxiaWordle",
+      "RelativePath": "js/RegisterScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\RegisterScript.js"
     },
     {
       "Identity": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\site.js",

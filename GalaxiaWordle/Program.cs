@@ -6,6 +6,8 @@ using Business.GalaxiaWordle.Interfaces;
 using Business.GalaxiaWordle.Login.Logins;
 using Business.GalaxiaWordle.PasswordHasers;
 using Business.GalaxiaWordle.Registrations;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,9 +37,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapRazorPages();
-
 app.Run();

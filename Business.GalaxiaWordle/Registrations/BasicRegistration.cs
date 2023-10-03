@@ -1,4 +1,5 @@
 ﻿using Business.DynamicModelReflector.Interfaces;
+using Business.GalaxiaWordle.Data.Models;
 using Business.GalaxiaWordle.Interfaces;
 
 namespace Business.GalaxiaWordle.Registrations
@@ -23,22 +24,42 @@ namespace Business.GalaxiaWordle.Registrations
         #endregion
 
         #region Public Methods
-        public bool CreateNewUser(string userName, string password)
+        public bool CreateNewUser(UserInformation userInformation)
         {
-            if (userName == null || password == null)
-                return false;
-
-            Data.Models.Login userLogin = new()
-            {
-                UserName = userName,
-                Password = _passwordHashers.HashPassword(password)
-            };
-
             _modelreflector
-                .Create(userLogin)
+                .Create(FinalizeUsersInformation(userInformation))
                 .Execute();
 
             return true;
+        }
+        #endregion
+
+        #region Private Method
+        /// <summary>
+        /// Hashes the password and adds the correct Id.
+        /// </summary>
+        /// <param name="userInformation">User Information objec that comes from the front end.</param>
+        /// <returns>Finalize Users Information Object.</returns>
+        /// <exception cref="ArgumentNullException">ArgumentNullException if userInformation is null.</exception>
+        private UserInformation FinalizeUsersInformation(UserInformation userInformation)
+        {
+            if (userInformation == null) throw new ArgumentNullException(nameof(userInformation));
+
+            userInformation.Password = _passwordHashers.HashPassword(userInformation.Password);
+
+            IEnumerable<UserInformation> users = new List<UserInformation>();
+
+            _modelreflector
+                .Load(users)
+                .Select(users => users.Id)
+                .Execute();
+
+            if (!users.Any())
+                userInformation.Id = 1;
+            else
+                userInformation.Id = users.Max(u => u.Id) + 1;
+
+            return userInformation;
         }
         #endregion
     }
