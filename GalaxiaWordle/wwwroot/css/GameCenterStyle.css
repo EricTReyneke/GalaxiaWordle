@@ -1,0 +1,219 @@
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E2C;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar-div {
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: #2E2E3C;
+}
+
+.nav-bar {
+    float: right;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+}
+
+.links {
+    color: #B0B0BF;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.1em;
+}
+
+    .links:hover {
+        color: #FF6B6B;
+    }
+
+.game-center-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #1E1E2C;
+}
+
+.welcome-heading {
+    text-align: center;
+    margin-top: 10vh;
+    padding-bottom: 5vh;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-image: linear-gradient(to right, white, #FF6B6B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+.game-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+}
+
+.game-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2E2E3C;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .game-card:hover {
+        transform: scale(1.05);
+    }
+
+.game-img-div {
+    height: 30%;
+    width: 100%;
+}
+
+    .game-img-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.play-button-div {
+    background-color: #76AF54;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button {
+    height: 100%;
+    width: 100%;
+    background-color: #76AF54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .play-button:hover {
+        background-color: #65963B;
+    }
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .links {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .welcome-heading {
+        font-size: 24px;
+    }
+}
+
+.wordle-game {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 120px;
+    height: 120px;
+    background-color: #555555;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 50px;
+    outline: none;
+}
+
+.CongratulationsPopUp {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 44, 0.9); /* Dark background */
+    z-index: 1000; /* Ensure it appears above other content */
+    justify-content: center;
+    align-items: center;
+}
+
+    .CongratulationsPopUp h1 {
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right, white, #FF6B6B);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 2em;
+    }
+
+    .CongratulationsPopUp button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #76AF54;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .CongratulationsPopUp button:hover {
+            background-color: #65963B;
+        }
+
+.dialog {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+﻿@page
+@model GalaxiaWordle.Pages.GameCenterModel
+@{
+}
+
+<header>
+    <link rel="stylesheet" href="~/css/GameCenterStyle.css">
+    <script src="~/js/GameCenterScript.js"></script>
+</header>
+
+<div class="game-center-hub">
+    <div class="game-center-cards">
+        <div class="nav-bar-div">
+            <nav class="nav-bar">
+                <a href="#" class="links">About Galaxia</a>
+                <a href="#" class="links">Contact Us</a>
+                <img class="profile-img" src="~/img/11fire.png" alt="Profile Image" />
+            </nav>
+        </div>
+
+        <div class="game-center-body">
+            <h1 class="welcome-heading">
+                Welcome to game center Galaxia
+            </h1>
+
+            <div class="game-holder">
+                <div class="game-card">
+                    <div class="game-img-div">
+                        <img class="game-img" src="~/img/wordle_og_1200x630.png" alt="Game Image" />
+                    </div>
+                    <div class="play-button-div">
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wordle-game">
+        <div class="row-1">
+            <input class="letter-1" id="row-1-letter-1" maxlength="1" oninput="LetterInputOnClick(1, 1);">
+            <input class="letter-2" id="row-1-letter-2" maxlength="1" readonly oninput="LetterInputOnClick(1, 2);">
+            <input class="letter-3" id="row-1-letter-3" maxlength="1" readonly oninput="LetterInputOnClick(1, 3);">
+            <input class="letter-4" id="row-1-letter-4" maxlength="1" readonly oninput="LetterInputOnClick(1, 4);">
+            <input class="letter-5" id="row-1-letter-5" maxlength="1" readonly oninput="LetterInputOnClick(1, 5);">
+        </div>
+        <br />
+        <div class="row-2">
+            <input class="letter-1" id="row-2-letter-1" maxlength="1" readonly oninput="LetterInputOnClick(2, 1);">
+            <input class="letter-2" id="row-2-letter-2" maxlength="1" readonly oninput="LetterInputOnClick(2, 2);">
+            <input class="letter-3" id="row-2-letter-3" maxlength="1" readonly oninput="LetterInputOnClick(2, 3);">
+            <input class="letter-4" id="row-2-letter-4" maxlength="1" readonly oninput="LetterInputOnClick(2, 4);">
+            <input class="letter-5" id="row-2-letter-5" maxlength="1" readonly oninput="LetterInputOnClick(2, 5);">
+        </div>
+        <br />
+        <div class="row-3">
+            <input class="letter-1" id="row-3-letter-1" maxlength="1" readonly oninput="LetterInputOnClick(3, 1);">
+            <input class="letter-2" id="row-3-letter-2" maxlength="1" readonly oninput="LetterInputOnClick(3, 2);">
+            <input class="letter-3" id="row-3-letter-3" maxlength="1" readonly oninput="LetterInputOnClick(3, 3);">
+            <input class="letter-4" id="row-3-letter-4" maxlength="1" readonly oninput="LetterInputOnClick(3, 4);">
+            <input class="letter-5" id="row-3-letter-5" maxlength="1" readonly oninput="LetterInputOnClick(3, 5);">
+        </div>
+        <br />
+        <div class="row-4">
+            <input class="letter-1" id="row-4-letter-1" maxlength="1" readonly oninput="LetterInputOnClick(4, 1);">
+            <input class="letter-2" id="row-4-letter-2" maxlength="1" readonly oninput="LetterInputOnClick(4, 2);">
+            <input class="letter-3" id="row-4-letter-3" maxlength="1" readonly oninput="LetterInputOnClick(4, 3);">
+            <input class="letter-4" id="row-4-letter-4" maxlength="1" readonly oninput="LetterInputOnClick(4, 4);">
+            <input class="letter-5" id="row-4-letter-5" maxlength="1" readonly oninput="LetterInputOnClick(4, 5);">
+        </div>
+        <br />
+        <div class="row-5">
+            <input class="letter-1" id="row-5-letter-1" maxlength="1" readonly oninput="LetterInputOnClick(5, 1);">
+            <input class="letter-2" id="row-5-letter-2" maxlength="1" readonly oninput="LetterInputOnClick(5, 2);">
+            <input class="letter-3" id="row-5-letter-3" maxlength="1" readonly oninput="LetterInputOnClick(5, 3);">
+            <input class="letter-4" id="row-5-letter-4" maxlength="1" readonly oninput="LetterInputOnClick(5, 4);">
+            <input class="letter-5" id="row-5-letter-5" maxlength="1" readonly oninput="LetterInputOnClick(5, 5);">
+        </div>
+
+        <div class="CongratulationsPopUp">
+            <div class="dialog">
+                <h1>Congratulations.</h1>
+                <button>Play with another word.</button>
+            </div>
+        </div>
+    </div>
+    @Html.AntiForgeryToken()
+</div>

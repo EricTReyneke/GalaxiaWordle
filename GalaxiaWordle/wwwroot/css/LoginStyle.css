@@ -96,3 +96,39 @@ button {
     .LoginHref:hover {
         color: #FF6B6B;
     }
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        float: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .links {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .welcome-heading {
+        font-size: 1.5em;
+    }
+
+    .play-button {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .game-card {
+        width: 90%;
+    }
+
+    .game-img-div {
+        height: 50%;
+    }
+
+    .play-button-div {
+        height: 50px;
+    }
+}

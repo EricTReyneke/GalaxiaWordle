@@ -27,7 +27,7 @@ namespace GalaxiaWordle.Pages
         public IActionResult OnPostValidateUserInfo(string userName, string password)
         {
             if (_login.ValidateUserCredentails(userName, password))
-                return new RedirectResult("/Login");
+                return new RedirectResult("/GameCenter");
 
             return Page();
         }

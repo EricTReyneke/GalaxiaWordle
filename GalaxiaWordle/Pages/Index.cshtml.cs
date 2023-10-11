@@ -14,7 +14,7 @@ namespace GalaxiaWordle.Pages
 
         public IActionResult OnGet()
         {
-            return new RedirectResult("/Login");
+            return new RedirectResult("/GameCenter");
         }
     }
 }

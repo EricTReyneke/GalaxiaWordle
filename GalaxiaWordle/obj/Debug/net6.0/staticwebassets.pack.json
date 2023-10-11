@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GalaxiaWordle.bundle.scp.css"
     },
     {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\GameCenterStyle.css",
+      "PackagePath": "staticwebassets\\css\\GameCenterStyle.css"
+    },
+    {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\css\\LoginStyle.css",
       "PackagePath": "staticwebassets\\css\\LoginStyle.css"
     },
@@ -19,6 +23,18 @@
     {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\img\\11fire.png",
+      "PackagePath": "staticwebassets\\img\\11fire.png"
+    },
+    {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\img\\wordle_og_1200x630.png",
+      "PackagePath": "staticwebassets\\img\\wordle_og_1200x630.png"
+    },
+    {
+      "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\GameCenterScript.js",
+      "PackagePath": "staticwebassets\\js\\GameCenterScript.js"
     },
     {
       "Id": "C:\\GalaxiaWordle\\GalaxiaWordle\\wwwroot\\js\\LoginScript.js",

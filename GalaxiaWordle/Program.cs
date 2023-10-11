@@ -2,6 +2,7 @@ using Business.DynamicModelReflector.DataOperations;
 using Business.DynamicModelReflector.Interfaces;
 using Business.DynamicModelReflector.ModelReflectors;
 using Business.DynamicModelReflector.QueryBuilders;
+using Business.GalaxiaWordle.Games;
 using Business.GalaxiaWordle.Interfaces;
 using Business.GalaxiaWordle.Login.Logins;
 using Business.GalaxiaWordle.PasswordHasers;
@@ -22,6 +23,7 @@ builder.Services.AddScoped<IModelReflector, SqlModelReflector>();
 builder.Services.AddScoped<IPasswordHasher, SaltPasswordHasing>();
 builder.Services.AddScoped<ILogin, BasicLogin>();
 builder.Services.AddScoped<IRegistration, BasicRegistration>();
+builder.Services.AddScoped<IWordle, WordleGalaxia>();
 #endregion
 
 builder.Services.AddRazorPages();
