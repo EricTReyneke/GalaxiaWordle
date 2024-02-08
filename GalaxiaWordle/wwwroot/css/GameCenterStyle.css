@@ -48,10 +48,7 @@
     padding-bottom: 5vh;
     font-size: 2.5em;
     font-weight: bold;
-    background-image: linear-gradient(to right, white, #FF6B6B);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
     display: inline-block;
 }
 
@@ -121,7 +118,7 @@
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 600px) {
+@@media only screen and (max-width: 600px) {
     .nav-bar {
         float: none;
         text-align: center;
@@ -139,11 +136,42 @@
 }
 
 .wordle-game {
+    display: none;
     padding-top: 2%;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.select-label {
+    color: #B0B0BF;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.custom-select {
+    display: none;
+    width: auto;
+    padding: 10px 15px;
+    background-color: #555555;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .custom-select:hover {
+        background-color: #434343;
+    }
+
+    .custom-select:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #FF6B6B;
+    }
+
 
 .row-1,
 .row-2,
@@ -178,8 +206,8 @@ input {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 30, 44, 0.9); /* Dark background */
-    z-index: 1000; /* Ensure it appears above other content */
+    background-color: rgba(30, 30, 44, 0.9);
+    z-index: 1000;
     justify-content: center;
     align-items: center;
 }

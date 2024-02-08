@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace GalaxiaWordle.Pages
@@ -14,7 +16,7 @@ namespace GalaxiaWordle.Pages
 
         public IActionResult OnGet()
         {
-            return new RedirectResult("/GameCenter");
+            return new RedirectResult("/Login");
         }
     }
 }

@@ -45,6 +45,15 @@
     padding-bottom: 2%;
 }
 
+.Inputs:-webkit-autofill,
+.Inputs:-webkit-autofill:hover,
+.Inputs:-webkit-autofill:focus,
+.Inputs:-webkit-autofill:active {
+    -webkit-text-fill-color: #E0E0E6 !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .Inputs {
     color: #E0E0E6;
     text-align: center;
@@ -66,9 +75,9 @@
     }
 
 button {
-    background-color: #FF6B6B;
+    background-color: #1d1160;
     color: #E0E0E6;
-    padding: 1% 2%;
+    padding: 0.5% 7% 0.5% 7%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -76,7 +85,7 @@ button {
 }
 
     button:hover {
-        background-color: #E05555;
+        background-color: #662d91;
     }
 
 .Text {
@@ -94,7 +103,7 @@ button {
 }
 
     .LoginHref:hover {
-        color: #FF6B6B;
+        color: #1d1160;
     }
 
 @media only screen and (max-width: 600px) {

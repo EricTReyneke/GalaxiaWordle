@@ -5,14 +5,7 @@ namespace Business.GalaxiaWordle.Games
     public class WordleGalaxia : IWordle
     {
         #region Fields
-        string _wrodleWord;
-        #endregion
-
-        #region Constructors
-        public WordleGalaxia()
-        {
-            _wrodleWord = "Bring".ToLower();
-        }
+        public string WordleWord { get; set; }
         #endregion
 
         #region Public Methods
@@ -42,7 +35,7 @@ namespace Business.GalaxiaWordle.Games
         /// <returns>A string ("Green", "Yellow", or "Red") indicating the validation result.</returns>
         private string ValidateLetter(char character, int letterIndex)
         {
-            List<string> validationList = _wrodleWord.Select((letter, index) =>
+            List<string> validationList = WordleWord.Select((letter, index) =>
             {
                 if (letter.Equals(character))
                 {

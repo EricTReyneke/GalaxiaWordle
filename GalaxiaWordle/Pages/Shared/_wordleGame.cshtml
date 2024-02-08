@@ -1,0 +1,29 @@
+﻿@using Business.GalaxiaWordle.Data.Models;
+@model WordleGameContext
+
+<div class="wordle-game" id="wordle-game-div">
+    @for (int i = 1; i <= 5; i++)
+    {
+        <div class="row-@i">
+            @for (int j = 1; j <= Model.WordLength; j++)
+            {
+                @if (i == 1 && j == 1)
+                {
+                    <input class="letter-@j" id="row-@i-letter-@j" maxlength="1" oninput="LetterInputOnClick(@i, @j, @Model.WordLength);">
+                }
+                else
+                {
+                    <input class="letter-@j" id="row-@i-letter-@j" maxlength="1" readonly oninput="LetterInputOnClick(@i, @j, @Model.WordLength);">
+                }
+            }
+        </div>
+        <br />
+    }
+
+    <div class="CongratulationsPopUp">
+        <div class="dialog">
+            <h1>Congratulations.</h1>
+            <button>Play with another word.</button>
+        </div>
+    </div>
+</div>
